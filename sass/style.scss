@@ -15,6 +15,9 @@ a {
 		text-decoration: underline;
 		color: $main-color;
 	}
+	&:visited {
+		color: $main-color;
+	}
 }
 
 heder {
@@ -168,12 +171,89 @@ visibility: hidden;
 	}
 }
 	.content__banner {
-		width: 100%;
-		height: 180px;
-		margin: 20px 5% 20px 5%;
+		width: 268px;
+		height: 200px;
 		background: url(../images/babygirlnames.png) no-repeat;
-	}
+		background-position: center;
+		background-size: cover;
+		margin: 20px 0 20px 0;
+		padding: 20px 0;
+		p {
+			width: 80%;
+			margin: 0 10%;
+			color: $main-color;
+			font-size: 25px;
+		}
+		button {
+			@include button(190px, 40px);
+		}
+}
 
+.programs {
+	background: url(../images/ivf-service.png) no-repeat;
+	background-position: top;
+	background-size: cover;
+	color: $main-color;
+	padding: 10px 5px;
+	h1 {
+		font-size: 30px;
+		word-break: break-all;
+		line-height: 50px;
+	}
+	&__program {
+		background-color:  rgba(78, 252, 252, 0.59);
+		margin: 10px 0 0 0;
+		height: 255px;
+		padding: 50px 60px;
+		h2 {
+			text-align: center;
+		}
+		button {
+			@include button(130px, 40px);
+			position: absolute;
+			left: 50%;
+			margin: 0 0 0 -65px;
+		}
+	}
+}
+
+.bottom-links {
+	background-color: $bottom-color;
+	margin: -30px 0 0 0;
+	text-align: center;
+	div {
+		margin: 20px 0;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+}
+
+.footer {
+	background-color: $bottom-color;
+	margin: -30px 0 0 0;
+	border-top: 2px solid $gray-text;
+	padding: 0 0 20px 0;
+	a {
+		height: 95px;
+		padding: 30px 0 0 0;
+		text-align: center;
+		&:hover {
+			background-color: $social-color;
+		}
+	}
+	.fa {
+		color: $gray-text;
+		font-size: 35px;
+	}
+	&__social-buttons {
+		border-bottom: 2px solid $gray-text;
+	}
+	.created-by {
+		margin: 40px 0 0 0;
+		color: $soft-color;
+		text-align: center;
+	}
+}
 
 
 
