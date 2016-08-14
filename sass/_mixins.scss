@@ -3,3 +3,16 @@
 	width : $width;
 	height: $height;
 } 
+@mixin carousel {
+	margin: 25px 0 0 0;
+	ol {
+		position: absolute;
+		top: 110%;
+		li {
+			border-color: $main-blue;
+			&.active {
+				background-color: $main-blue;
+			}
+		}
+	}
+}
