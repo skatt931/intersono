@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @import 'variables';
 @import 'mixins';
@@ -15,13 +16,15 @@ a {
 		text-decoration: underline;
 		color: $main-color;
 	}
+	&:visited {
+		color: $main-color;
+	}
 }
 
 heder {
 	position: relative;
 	.container {
-		padding: 0;
-		margin: 0;
+
 	}
 	.row {
 		margin: 0;
@@ -75,7 +78,7 @@ heder {
 		li { 
 			width: 200px;
 			a {
-				color: white;
+				color: $main-color;
 				font-weight: 700;
 				&:hover {
 					background-color: $main-blue - 000020;
@@ -103,7 +106,7 @@ heder {
 	h1 {
 		color: $main-color;
 		font-weight: 700;
-		line-height: 45px;
+		line-height: 60px;
 	}
 }
 .text-uppercase {
@@ -124,9 +127,15 @@ visibility: hidden;
 
 #carousel-1 {
 	@include carousel;
+	.carousel-control {
+		display: none;
+	}
 }
 #carousel-2 {
 	@include carousel;
+	.carousel-control {
+		display: none;
+	}
 }
 #second-block, .content__contact-us {
 	margin: 80px 0 0 0;
@@ -168,16 +177,98 @@ visibility: hidden;
 	}
 }
 	.content__banner {
-		width: 100%;
-		height: 180px;
-		margin: 20px 5% 20px 5%;
-		background: url(../images/babygirlnames.png) no-repeat;
+		width: 80%;
+		background: url(../images/babygirlnames.png);
+		background-position: center;
+		background-size: cover;
+		padding: 20px 0;
+		margin: 20px 10% 20px 10%;
+		p {
+			width: 80%;
+			margin: 0 10%;
+			color: $main-color;
+			font-size: 25px;
+		}
+		button {
+			@include button(190px, 40px);
+		}
+}
+
+//PROGRAMS
+.programs {
+	background: url(../images/ivf-service.png) no-repeat;
+	background-position: top;
+	background-size: cover;
+	color: $main-color;
+	padding: 10px 5px;
+	h1 {
+		font-size: 30px;
+		word-break: break-all;
+		line-height: 50px;
 	}
+	&__program {
+		background-color:  rgba(78, 252, 252, 0.59);
+		margin: 10px 0 0 0;
+		height: 255px;
+		padding: 50px 60px;
+		h2 {
+			text-align: center;
+		}
+		button {
+			@include button(130px, 40px);
+			position: absolute;
+			left: 50%;
+			margin: 0 0 0 -65px;
+		}
+	}
+}
+
+//LINKS
+.bottom-links {
+	background-color: $bottom-color;
+	margin: -30px 0 0 0;
+	text-align: center;
+	div {
+		margin: 20px 0;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+}
+
+//FOOTER
+.footer {
+	background-color: $bottom-color;
+	margin: -30px 0 0 0;
+	border-top: 2px solid $gray-text;
+	padding: 0 0 20px 0;
+	a {
+		height: 95px;
+		padding: 30px 0 0 0;
+		text-align: center;
+		&:hover {
+			background-color: $social-color;
+		}
+	}
+	.fa {
+		color: $gray-text;
+		font-size: 35px;
+	}
+	&__social-buttons {
+		border-bottom: 2px solid $gray-text;
+	}
+	.created-by {
+		margin: 40px 0 0 0;
+		color: $soft-color;
+		text-align: center;
+	}
+}
 
 
 
 
-
+@import 'media768px';
+@import 'media992px';
+@import 'media1200px';
 
 
 

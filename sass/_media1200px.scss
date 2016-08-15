@@ -1,0 +1,72 @@
+@import 'variables';
+
+
+	#globe {
+		display: none;
+	} 
+
+
+@media screen and (min-width : 1200px) {
+	.menu {
+		.container {
+			.navbar-nav {
+				width: 86%;
+				margin: 0 7%;
+			}
+		}
+	}
+	#globe {
+		display: inline;
+	} 
+	
+	.big-image{
+		.breadcrumb {
+			margin: -25px 7%;
+		}
+	}
+	#carousel-1 {
+		.carousel-indicators {
+			left: 55%;
+		}
+		.carousel-inner {
+			width: 390px;
+		}
+		.left {
+			left: 0;
+		}
+	}
+	#carousel-2 {
+		.carousel-inner {
+			width: 390px;
+		}
+		.left {
+			left: 0;
+		}
+	}
+	#banner {
+		position: relative;
+		width: 210px;
+		margin: 230px 0 20px -200px;
+		left: -65px;
+		button {
+			width: 170px;
+		}
+	}
+	.square-button {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		left: 100%;
+		top: 20%;
+		margin: 0 0 0 -100px;
+		background-color: $main-blue;
+		opacity: 0.5;
+		i {
+			font-size: 35px;
+		}
+	}
+	.square-button:hover {
+		opacity: 1;
+	}
+	
+}

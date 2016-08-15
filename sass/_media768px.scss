@@ -1,0 +1,131 @@
+@import 'variables';
+
+.logo-text {
+	display: none;
+}
+
+
+@media screen and (min-width : 768px) {
+	.logo-text {
+		display: inline-block;
+	}
+	.menu {
+		.container {
+			width: 100%;
+			padding: 0;	
+			.navbar {
+				position: static;
+				margin: 0;
+				width: 100%;
+				li {
+					width: auto;
+				}
+			}
+		}
+	}
+	.dropdown-menu {
+		li {
+			a {
+				color: $gray-text !important;	
+				font-weight: 300 !important;
+			}
+		}
+	}
+	
+	#carousel-1 {
+		
+		.carousel-inner {
+			margin: 20px 0 0 60px;
+			width: 566px;
+		}
+		.carousel-control {
+			position: absolute;
+			display: inline-block !important;
+			height: 50px;
+			width: 50px;
+			background-color: rgba(128, 128, 128, 0.43);
+			top: 50%;
+			margin: -25px 0 0 50px;
+			span {
+				font-size: 40px;
+				vertical-align: middle;
+			}
+		}
+		.carousel-control:hover {
+			background-color: $main-blue;
+		}
+		.right-control {
+			left: 75%;
+		}
+	}
+
+	#carousel-2 {
+		
+		.carousel-inner {
+			margin: 20px 0 0 60px;
+			width: 566px;
+			div {
+				img {
+					width: 100%;
+				}
+			}
+		}
+		.carousel-control {
+			position: absolute;
+			display: inline-block !important;
+			height: 50px;
+			width: 50px;
+			background-color: rgba(128, 128, 128, 0.43);
+			top: 50%;
+			margin: -25px 0 0 50px;
+			span {
+				font-size: 40px;
+				vertical-align: middle;
+			}
+		}
+		.carousel-control:hover {
+			background-color: $main-blue;
+		}
+		.right-control {
+			left: 75%;
+		}
+	}
+	//FORM
+	.content__contact-us {
+		margin: 80px auto 20px auto;
+	}
+	//BANNER
+	.content__banner {
+		width: 60%;
+		margin: 20px 20% 20px 20%;
+	}
+	.programs {
+	background: url(../images/programs.jpg) no-repeat !important;
+	background-position: top !important;
+	padding-bottom: 20px !important;
+
+	&__program {
+		background-color:  rgba(78, 252, 252, 0.59);
+		margin: 10px 30px 0 !important;
+		height: 200px !important;
+		padding: 25px 30px !important;
+		}
+	}
+	
+	.bottom-links {
+		width: 100%;
+		.container {
+			position: relative;
+			width: 300px;
+			left: 50%;
+			margin: 0 0 0 -150px;
+			padding-bottom: 40px;
+		}
+	}
+	.footer {
+		.footer__social-buttons {
+			border-bottom: none;
+			margin: 0 0 0 35%;
+		}
+	}
+}

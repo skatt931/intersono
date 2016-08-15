@@ -1,0 +1,121 @@
+@import 'variables';
+
+#more, #search {
+	display: none;
+}
+
+@media screen and (min-width : 992px) {
+	.header__contacts {
+		color: $main-blue;
+		margin: 25px 0 0 0;
+		i {
+			color: $gray-text;
+		}
+	}
+	.sign-up {
+		margin: 20px 0 0 20px;
+	}
+	.menu {
+		.container {
+			.navbar {
+				.hidden-elem {
+					display: none;
+				}
+			}
+		}
+	}
+	#more {
+		display: inline;
+		text-decoration: underline;
+		font-weight: 300;
+		text-transform: capitalize;
+		opacity: 0.8;
+	}
+	#search {
+		display: inline;
+	}
+	.big-image {
+		height: 300px;
+		h1 {
+			margin: 50px 0 0 0;
+		}
+	}
+	#carousel-1 {
+		.carousel-indicators {
+			left: 60%;
+		}
+		.carousel-inner {
+			width: 330px;
+		}
+	}
+	#carousel-2 {
+		.carousel-indicators {
+			left: 55%;
+			top: 105%;
+		}
+		.carousel-inner {
+			width: 330px;
+			margin: 90px 0 0 50px;
+		}
+	}
+	#navbar-vertical {
+		ul {
+			li {
+				border-bottom: 1px solid $soft-color;
+				width: 200px;
+				a {
+					color: $bottom-color;
+					font-weight: 700;
+					&:hover {
+						background-color: $main-blue;
+						color: $main-color;
+					}
+				}
+			}
+		}
+	}
+	//FORM
+	#form {
+		margin: 20px 0 0 0;
+		width: 230px;
+	}
+	#banner {
+		width: 210px;
+		margin: 60px 0 20px -209px;
+		button {
+			width: 170px;
+		}
+	}
+	  .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+	.bottom-links {
+		padding: 0;
+		.row {
+			padding: 0;
+		}
+		.container {
+			padding: 0;
+			width: 90%;
+			left: 20%;
+			ul {
+				margin: 0 15px 0 0;
+				li {
+					text-align: left;
+					font-size: 15px;
+					line-height: 35px;
+				}
+			}
+		}
+	}
+	.footer {
+		.text-left {
+			color: $soft-color;
+			margin: 35px 0 0 0;
+		}
+		.footer__social-buttons {
+			margin: 0 60px 0 100px;
+		}
+	}
+}

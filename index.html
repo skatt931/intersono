@@ -26,13 +26,35 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="header__logo col-xs-3 col-md-1"> 
+					<div class="header__logo col-xs-3 col-sm-5 col-md-4 col-lg-3"> 
 						<a href="#"><img src="images/logo_icon.png" alt="Intersono logo" class="image-responsive"></a>
+						<a href="#" class="logo-text"><img src="images/logo_text.png" alt="Intersono logo text"></a>
 					</div>
-
+					
+					<div class="header__contacts hidden-xs hidden-sm col-md-3 col-lg-4">
+						<div class="header__contacts__net pull-left">
+							<i class="fa fa-envelope-o icon"></i>
+							<span><strong>international@intersono.ua</strong></span>
+							<br>
+							<i class="fa fa-skype icon"></i>
+							<span>intersono.1576546884</span>
+						</div>
+						<div class="header__contacts__phones pull-right hidden-xs hidden-sm hidden-md">
+							<i class="fa fa-mobile-phone icon"></i>
+							<span>+38 (032) 295 55 55</span>
+							<br>
+							<span class="icon"></span>
+							<span>+38 (032) 295 55 55</span>
+						</div>
+                	</div>
+                 	<button class="sign-up btn btn-success btn-lg pull-left hidden-xs hidden-sm">
+                        <strong>Sign up for consultation</strong>
+                    </button>
 					<nav class="pull-right ">
-						<div class="header__language col-xs-6  dropdown">
-							<button class="btn btn-default dropdown-toggle dropdown-noborder" type="button" id="lang-switcher" data-toggle="dropdown" aria-haspopup="true">  
+						<div class="header__language col-xs-6 col-sm-2 col-sm-offset-4   dropdown">
+						
+							<button class="btn btn-default dropdown-toggle dropdown-noborder" type="button" id="lang-switcher" data-toggle="dropdown" aria-haspopup="true">
+							<i class="fa fa-globe" id="globe"></i>  
 							English 
 							<span class="caret"></span>
 							</button>
@@ -105,9 +127,13 @@
                                 <li><a href="#">International patients accommodation</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Patient Success stories</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="hidden-elem"><a href="#">Patient Success stories</a></li>
+                        <li class="hidden-elem"><a href="#">Blogs</a></li>
+                        <li class="hidden-elem"><a href="#">Contact</a></li>
+						<li id="more"><a href="#">More</a></li>
+                   		<li class="pull-right" id="search"><a href="#">
+                            <i class="fa fa-search search-button"></i>
+                        </a></li>
                     </ul>
                 </div>
             </nav>
@@ -170,7 +196,13 @@
                                     <img src="images/slider1.jpg" alt="slide-picture" class="img-responsive">
                                 </div>
                             </div>
-
+							
+                        <a class="hidden-xs-down left carousel-control square-button" href="#carousel-1" role="button" data-slide="prev">
+                                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                        </a>
+						<a class="hidden-xs-down right carousel-control square-button right-control" href="#carousel-1" role="button" data-slide="next">
+							<span class="fa fa-angle-right" aria-hidden="true"></span>
+						</a>
                         </div>
 
                         <div class="clearfix"></div>
@@ -206,10 +238,17 @@
                                     <img src="images/slider2.jpg" alt="slide-picture">
                                 </div>
                             </div>
-
+                            <a class="left carousel-control square-button" href="#carousel-2" role="button" data-slide="prev">
+                                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                       		</a>
+							<a class="right carousel-control square-button right-control" href="#carousel-2" role="button" data-slide="next">
+								<span class="fa fa-angle-right" aria-hidden="true"></span>
+							</a>
+						</div>
+						
     <!--/MAIN IFORMATION  -->
                                                
-                        </div>
+                   
                     </div>
                 </div>
                 <div class="content__left-part col-xs-12 col-md-3 pull-left">
@@ -239,7 +278,7 @@
 
 		<!--CONTACT FORM -->
                        
-                        <div class="content__contact-us">
+                        <div class="content__contact-us col-sm-8 col-sm-push-2  col-md-push-0 " id="form">
                             <form role="form">
                                 <div class="form-group">
 
@@ -269,17 +308,205 @@
 
                         </div>
 
- 			<!--/CONTACT FORM       -->
+ 			<!--/CONTACT FORM -->
                        
-                        <div class="content__banner text-center">banner</div>
-
-
-
                     </div>
                 </div>
+				<div class="content__banner col-xs-12" id="banner">
+					<p>Personalised IVF and Egg donation Programs</p>
+					<button type="button" class="btn btn-default">View all Programs</button>
+				</div>
             </div>
         </div>
     </div>
+    
+<!--PROGRAMS-->
+    <div class="programs jumbotron">
+        <h1 class="text-uppercase text-center"><strong>Infertility treat<span>-</span>ment</strong> Programs</h1>
+        <div class="container">
+        	<div class="row">
+				<div class="programs__inner">
+					<div class="programs__program  col-xs-12 col-sm-3 col-sm-offset-1">
+						<div class="inner">
+							<h2><strong>IVF + ICSI</strong></h2>
+							<button class="btn btn-default"><strong>Read more</strong></button>
+						</div>
+					</div>
+					<div class="programs__program  col-xs-12 col-sm-3 col-sm-offset-1">
+						<div class="inner">
+							<h2><strong>IVF + ICSI</strong></h2>
+							<button class="btn btn-default"><strong>Read more</strong></button>
+						</div>
+					</div>
+					<div class="programs__program  col-xs-12 col-sm-3 col-sm-offset-1">
+						<div class="inner">
+							<h2><strong>IVF + ICSI</strong></h2>
+							<button class="btn btn-default"><strong>Read more</strong></button>
+						</div>
+					</div>
+				</div>
+        	</div>
+        </div>
+    </div>
+<!--/PROGRAMS--> 
+      
+      
+<!--LINKS-->
+      <div class="bottom-links">
+        <div class="container">
+            <div class="row">
+                <div class="bottom-links__clinic hidden-xs hidden-sm col-md-5ths">
+                    <ul class="list-unstyled">
+                        <li class="text-uppercase"><a href="#"><strong>Clinic</strong></a></li>
+
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Why us</a></li>
+                        <li><a href="#">Our Certificates</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Success Rates</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">3-D Clinic Tour</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="bottom-links__about hidden-xs hidden-sm col-md-5ths">
+                    <ul class="list-unstyled">
+                        <li class="text-uppercase"><a href="#"><strong>About infertility</strong></a></li>
+
+                        <li><a href="#">Causes of infertility</a></li>
+                        <li><a href="#">Female infertility</a></li>
+                        <li><a href="#">Male infertility</a></li>
+                        <li><a href="#">Female infertility Diagnostics</a></li>
+                        <li><a href="#">Male infertility Diagnostics</a></li>
+                        <li><a href="#">Genetic Diagnostics</a></li>
+                    </ul>
+                </div>
+                <div class="bottom-links__treatments hidden-xs hidden-sm col-md-5ths">
+                    <ul class="list-unstyled">
+                        <li class="text-uppercase"><a href="#"><strong>Treatments</strong></a></li>
+
+                        <li><a href="#">Fertility treatment methods</a></li>
+                        <li><a href="#">Infertility treatment Programs</a></li>
+                    </ul>
+                </div>
+                <div class="bottom-links__international hidden-xs hidden-sm col-md-5ths">
+                    <ul class="list-unstyled">
+                        <li class="text-uppercase"><a href="#"><strong>International Patient Care</strong></a></li>
+
+                        <li><a href="#">First visit</a></li>
+                        <li><a href="#">Care and assistance</a></li>
+                        <li><a href="#">International patients accom-modation</a></li>
+                    </ul>
+                </div>
+                <div class="bottom-links__information hidden-xs hidden-sm col-md-5ths">
+                    <ul class="list-unstyled">
+                        <li class="text-uppercase"><a href="#"><strong>Information</strong></a></li>
+
+                        <li><a href="#">Prices</a></li>
+                        <li><a href="#">Patient</a></li>
+                        <li><a href="#">Success stories</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="bottom-links__mobile">
+                    <div class="bottom-links__clinic hidden-md hidden-lg">
+                        <a href="#menu-clinic" data-toggle="collapse" aria-expanded="false"><strong>Clinic</strong> <span class="caret"></span></a>
+
+                        <ul id="menu-clinic" role="menu" aria-labelledby="menu-clinic" class="list-unstyled collapse">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About us</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Why us</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Our Certificates</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Our Team</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Success Rates</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Location</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3-D Clinic Tour</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Photo Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom-links__clinic hidden-md hidden-lg">
+                        <a href="#menu-about-infertility" data-toggle="collapse" aria-expanded="false"><strong>About infertility</strong> <span class="caret"></span></a>
+
+                        <ul id="menu-about-infertility" role="menu" aria-labelledby="menu-about-infertility" class="list-unstyled collapse">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Causes of infertility</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Female infertility</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Male infertility</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Male infertility</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Female infertility Diagnostics</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Male infertility Diagnostics</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Genetic Diagnostics</a></li> 
+                        </ul>
+                    </div>
+                    <div class="bottom-links__clinic hidden-md hidden-lg">
+                        <a href="#menu-treatments" data-toggle="collapse" aria-expanded="false"><strong>Treatments</strong> <span class="caret"></span></a>
+
+                        <ul id="menu-treatments" role="menu" aria-labelledby="menu-treatments" class="list-unstyled collapse">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fertility treatment methods</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Infertility treatment Programs</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom-links__clinic hidden-md hidden-lg">
+                        <a href="#menu-ipc" data-toggle="collapse" aria-expanded="false"><strong>International Patient Care</strong> <span class="caret"></span></a>
+
+                        <ul id="menu-ipc" role="menu" aria-labelledby="menu-ipc" class="list-unstyled collapse">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">First visit</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Care and assistance</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">International patients accom-modation</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom-links__clinic hidden-md hidden-lg">
+                        <a href="#menu-information" data-toggle="collapse" aria-expanded="false"><strong>Information</strong> <span class="caret"></span></a>
+
+                        <ul id="menu-information" role="menu" aria-labelledby="menu-information" class="list-unstyled collapse">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Prices</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Patient</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Success stories</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Blogs</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="square-button scroll-to-top hidden-xs hidden-sm hidden-md">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </div>
+    </div>  
+<!--/LINKS-->
+ 
+<!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 text-left copyright hidden-xs hidden-sm">
+                    © 2008-2015
+                </div>
+                <div class="col-md-4 col-md-offset-2 footer__social-buttons">
+                    <div class="row">
+                        <a class="col-xs-4 col-sm-2 col-md-4 col-lg-3" href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a class="  col-xs-4 col-sm-2 col-md-4 col-lg-3" href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="  col-xs-4 col-sm-2 col-md-4 col-lg-3" href="#">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                        <a class=" hidden-xs hidden-sm hidden-md col-lg-3" href="#">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-right created-by">
+                    <div class="hidden-md hidden-lg">© 2008-2015</div>
+                    <span>Design and Development by <strong>OTAKOYI</strong></span>
+                    <img src="images/logo_otakoyi.png" alt="Otakoyi logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--/FOOTER-->
 </body>
 
 </html>
