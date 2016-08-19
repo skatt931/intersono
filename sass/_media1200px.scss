@@ -14,7 +14,7 @@
 			.navbar {
 				width: 1170px;
 				.navbar-nav {
-					width: 1170px;
+					width: 1150px;
 				}
 			}
 		}
@@ -35,16 +35,16 @@
 		.carousel-inner {
 			width: 390px;
 		}
-		.left {
-			left: 0;
+		.right-control {
+			left: 365px;
 		}
 	}
 	#carousel-2 {
 		.carousel-inner {
 			width: 390px;
 		}
-		.left {
-			left: 0;
+		.right-control {
+			left: 355px;
 		}
 	}
 	#banner {
@@ -75,7 +75,7 @@
 	.bottom-links {
 		
 		.container {
-			padding: 20px 20px 20px 60px;
+			padding: 20px 20px 20px 30px;
 			width: 1170px;
 		}
 	}

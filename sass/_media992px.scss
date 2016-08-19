@@ -20,7 +20,7 @@
 			.navbar {
 				width: 970px;
 				.navbar-nav {
-					width: 970px;
+					width: 950px;
 					padding: 0 35px 0px 15px;
 				}
 				.hidden-elem {
@@ -52,6 +52,9 @@
 		.carousel-inner {
 			width: 330px;
 		}
+		.right-control {
+			left: 305px;
+		}
 	}
 	#carousel-2 {
 		.carousel-indicators {
@@ -61,6 +64,15 @@
 		.carousel-inner {
 			width: 330px;
 			margin: 90px 0 0 50px;
+		}
+		.right-control {
+			left: 295px;
+		}
+		.left-control {
+			left: 15px;
+		}
+		.carousel-control {
+			top: 63%;
 		}
 	}
 	#navbar-vertical {
@@ -98,7 +110,7 @@
 	.bottom-links {
 		padding: 0;
 		.container {
-			padding: 20px 20px 20px 30px;
+			padding: 20px 20px 20px 20px;
 			width: 970px;
 			left: auto;
 			margin: 0 auto;
@@ -113,6 +125,9 @@
 		}
 	}
 	.footer {
+		.container {
+			padding-left: 15px;
+		}
 		.text-left {
 			color: $soft-color;
 			margin: 35px 0 0 0;

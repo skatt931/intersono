@@ -21,7 +21,7 @@
 				border-radius: 0px;
 				border:none;
 				.navbar-nav {
-					width: 750px;
+					width: 740px;
 					margin: 0 auto;
 					padding: 0;
 				}
@@ -63,10 +63,13 @@
 			}
 		}
 		.carousel-control:hover {
-			background-color: $main-blue;
+			background: $main-blue;
 		}
 		.right-control {
-			left: 75%;
+			left: 541px;
+		}
+		.left-control {
+			left: 25px;
 		}
 	}
 
@@ -95,10 +98,13 @@
 			}
 		}
 		.carousel-control:hover {
-			background-color: $main-blue;
+			background: $main-blue;
 		}
 		.right-control {
-			left: 75%;
+			left: 541px;
+		}
+		.left-control {
+			left: 25px;
 		}
 	}
 	//FORM
@@ -113,6 +119,7 @@
 	.programs {
 	background: url(../images/programs.jpg) no-repeat !important;
 	background-position: top !important;
+	background-size: cover !important;
 	padding-bottom: 20px !important;
 
 	&__program {

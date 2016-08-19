@@ -64,19 +64,59 @@ heder {
 }
 
 //Navigation
+#second-menu {
+	position: absolute;
+	width: 37px;
+	height: 2300px;
+	left: 0;
+	top: 278px;
+	border-radius: 10px;
+	box-shadow: 11px -2px 14px -10px rgba(0,0,0,0.3);
+	span {
+		position: relative;
+		top: -1055px;
+		color: $main-blue;
+		font-size: 10px;
+		line-height: 5px;
+		font-weight: 700;
+	}
+}
+.navbar2 {
+	position: fixed;
+	z-index: 2;
+	top: 20%;
+	left: 58px;
+	background: none;
+	border:none;
+	z-index: 5;
+}
+#second-nav {
+	background-color: $main-blue;
+	width: 200px;
+	ul {
+		li {
+			a {
+				color : $main-color;
+				&:hover {
+					background-color: $main-blue - 000020;
+					color: $main-color;
+				}
+			}
+		}
+	}
+}
 
 .menu {
 	.navbar {
-		position: absolute;
-		left: 50%;
-		margin-left: -100px;
-		min-height:0;
+		min-height: 0;
+		margin-bottom: 0;
 		background-color: $main-blue;
 		z-index: 1;
 		border: none;
 		border-top: 1px solid $main-color;
 		li { 
-			width: 200px;
+			width: 250px;
+			margin: 0 auto;
 			a {
 				color: $main-color;
 				font-weight: 700;
@@ -129,12 +169,14 @@ visibility: hidden;
 	@include carousel;
 	.carousel-control {
 		display: none;
+		background: rgba(139, 137, 137, 0.37);
 	}
 }
 #carousel-2 {
 	@include carousel;
 	.carousel-control {
 		display: none;
+		background: rgba(139, 137, 137, 0.37);
 	}
 }
 #second-block, .content__contact-us {
@@ -176,13 +218,16 @@ visibility: hidden;
 		}
 	}
 }
+.content__banner_row {
+	margin: 0;	
+}
 	.content__banner {
-		width: 80%;
+		
 		background: url(../images/babygirlnames.png);
 		background-position: center;
 		background-size: cover;
 		padding: 20px 0;
-		margin: 20px 10% 20px 10%;
+		margin-bottom: 25px;
 		p {
 			width: 80%;
 			margin: 0 10%;
@@ -196,8 +241,10 @@ visibility: hidden;
 
 //PROGRAMS
 .programs {
+	position: relative;
+	z-index: 4;
 	background: url(../images/ivf-service.png) no-repeat;
-	background-position: top;
+	background-position: center;
 	background-size: cover;
 	color: $main-color;
 	padding: 10px 5px;
