@@ -18,6 +18,11 @@
 	.menu {
 		.container {
 			.navbar {
+				width: 970px;
+				.navbar-nav {
+					width: 970px;
+					padding: 0 35px 0px 15px;
+				}
 				.hidden-elem {
 					display: none;
 				}
@@ -92,13 +97,11 @@
     }
 	.bottom-links {
 		padding: 0;
-		.row {
-			padding: 0;
-		}
 		.container {
-			padding: 0;
-			width: 90%;
-			left: 20%;
+			padding: 20px 20px 20px 30px;
+			width: 970px;
+			left: auto;
+			margin: 0 auto;
 			ul {
 				margin: 0 15px 0 0;
 				li {

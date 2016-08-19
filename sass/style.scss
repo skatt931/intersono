@@ -24,7 +24,7 @@ a {
 heder {
 	position: relative;
 	.container {
-
+	
 	}
 	.row {
 		margin: 0;
@@ -228,10 +228,22 @@ visibility: hidden;
 	background-color: $bottom-color;
 	margin: -30px 0 0 0;
 	text-align: center;
+	strong {
+		color: $main-color;
+		text-transform: uppercase;
+	}
 	div {
 		margin: 20px 0;
 		font-size: 16px;
 		text-transform: uppercase;
+	}
+}
+.list-unstyled {
+	li {
+		a {
+			color: $gray-text;
+			text-transform: capitalize;
+		}
 	}
 }
 

@@ -4,14 +4,18 @@
 	#globe {
 		display: none;
 	} 
-
+.hidden {
+	display: none;
+}
 
 @media screen and (min-width : 1200px) {
 	.menu {
 		.container {
-			.navbar-nav {
-				width: 86%;
-				margin: 0 7%;
+			.navbar {
+				width: 1170px;
+				.navbar-nav {
+					width: 1170px;
+				}
 			}
 		}
 	}
@@ -68,5 +72,38 @@
 	.square-button:hover {
 		opacity: 1;
 	}
-	
+	.bottom-links {
+		
+		.container {
+			padding: 20px 20px 20px 60px;
+			width: 1170px;
+		}
+	}
+.floating-button {
+	display: block !important;	
+    position: fixed;
+    top: 40%;
+    right: 0;
+    transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+    color: #FFF;
+    font-weight: bold;
+    background: #4AB848;
+
+    .icon, .text {
+        display: inline-block;
+    }
+
+    .icon {
+        font-size: 20px;
+        background: #42A541;
+        padding: 16px;
+    }
+
+    .text {
+        font-size: 18px;
+        padding: 16px;
+        text-transform: uppercase;
+    }
+}
 }
